@@ -30,7 +30,7 @@ public @ToString class EmployeePayrollDTO {
 	@NotNull(message = "Department should not be empty")
 	public List<String> department;
 
-	@NotNull(message = "Department should not be empty")
+	@NotNull(message = "Date should not be empty")
 	@PastOrPresent(message = "Start date should be past or today's date")
 	@JsonFormat(pattern = "dd MMM yyyy")
 	public LocalDate startDate;
